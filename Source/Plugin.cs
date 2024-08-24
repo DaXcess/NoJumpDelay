@@ -13,7 +13,6 @@ public class Plugin : BaseUnityPlugin
 
     private void Awake()
     {
-        NoJumpDelay.Logger.SetSource(Logger);
         Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
         Logger.LogInfo("Boing boing!");
     }
