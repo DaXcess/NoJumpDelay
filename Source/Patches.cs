@@ -38,7 +38,7 @@ internal static class HostAuthoritativePatches
             return;
         }
 
-        if (lobby.GetData("NoPenaltyPresent") != "true") return;
+        if (lobby.GetData("NoJumpDelayPresent") != "true") return;
         
         // Host has mod installed, enable no jump delay
         Plugin.EnableNoJumpDelay(true);
